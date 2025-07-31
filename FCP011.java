@@ -1,7 +1,9 @@
+import java.util.*;
 public class FCP011{
 public static void main(String[]args){
-int a=56;
-if(a%2==0)
+Scanner sc =new Scanner(System.in);
+int k=sc.nextInt();
+if(k%2==0)
 {
 System.out.println("Even");
 }
