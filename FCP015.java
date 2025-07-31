@@ -1,13 +1,15 @@
+import java.util.*;
 public class FCP015{
 public static void main(String[]args){
+Scanner sc =new Scanner(System.in);
 int max1=0;
 int min1=0;
 int max2=0;
 int min2=0;
-int a=98;
-int b=13;
-int c=29;
-int d=109;
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+int d=sc.nextInt();
 if(a>b)
 {
 max1=a;
