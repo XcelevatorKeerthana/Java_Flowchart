@@ -1,29 +1,35 @@
 import java.util.*;
-
 public class FCP017{
 public static void main(String[]args){
-
-Scanner keerthi=new Scanner(System.in);
-int a=keerthi.nextInt();
-int b=keerthi.nextInt();
-int c=keerthi.nextInt();
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
 int max1=0;
 int min1=0;
 if(a>b)
 {
-max1=a;
-min1=b;
+	max1=a;
+	min1=b;
 }
 else
 {
-max1=b;
-min1=a;
+	max1=b;
+	min1=a;
 }
 if(max1>c)
 {
-System.out.println(c);
+	if(min1>c)
+	{
+		System.out.println(min1);
+	}
+        else
+        {
+        	System.out.println(c);
+	}
 }
-else
+else 
 {
-System.out.println(max1);
-}}}
+	System.out.println(max1);
+}
+}}
