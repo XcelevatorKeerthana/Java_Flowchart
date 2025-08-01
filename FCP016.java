@@ -1,18 +1,26 @@
+import java.util.*;
 public class FCP016{
 public static void main(String[]args){
-int y=2000;
+Scanner sc =new Scanner(System.in);
+int y=sc.nextInt();
 if(y%400==0)
 { 
-System.out.println("Leap year");
+ System.out.println("Yes");
 }
-else if(y%4==0)
-{
-if (y%100!=0)
-{
-System.out.println("Leap year");
+ else if(y%4==0)
+ {
+  if (y%100!=0)
+  {
+   System.out.println("Yes");
+   }
+  else
+  {
+   System.out.println("No");
+   }
 }
-else
-{
-System.out.println("Not a leap year");
+  else
+  {
+   System.out.println("No");
+  }
 }
-}}}
+}
